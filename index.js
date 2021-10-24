@@ -1,26 +1,6 @@
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
-var myFile = readTextFile("/building_inventory.csv")
-
-myScheme = {
+var myScheme = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": myFile},
+    "data": {"url": "https://raw.githubusercontent.com/prithvi-prakash/prithvi-prakash.github.io/master/building_inventory.csv"},
     "mark": "point",
     "encoding": {
         "x": {"field": "Year Acquired", "type": "temporal"},
