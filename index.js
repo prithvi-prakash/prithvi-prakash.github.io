@@ -4,7 +4,7 @@ var myScheme = {
     "data": {"url": "https://raw.githubusercontent.com/prithvi-prakash/prithvi-prakash.github.io/master/building_inventory.csv"},
     "mark": {
         "type": "circle",
-        "opacity": 0.5
+        "opacity": 0.45
         
     },
     
@@ -25,7 +25,7 @@ var myScheme = {
     "encoding": {
         "y": {"field": "Agency Name", "sort": "descending"},
         
-        "x": {"field": "Year Constructed", "type": "temporal"},
+        "x": {"field": "Year Constructed", "type": "temporal", "scale": {"domain": ["01-01-1900", "01-01-2020"]}},
         "tooltip": [
           {"field": "Location Name", "type": "nominal", "title": "Location"},
           {"field": "Square Footage", "type": "quantitative", "title": "Building Area"},
