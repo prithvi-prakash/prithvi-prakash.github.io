@@ -32,6 +32,7 @@ var myScheme = {
           {"field": "Square Footage", "type": "quantitative", "title": "Building Area"},
           {"field": "Total Floors", "type": "quantitative", "title": "Number of Floors"},
           {"field": "City", "type": "nominal", "title": "City"},
+          {"field": "Bldg Status", "type": "nominal","title": "Building Status"},
           {"field": "Year Constructed", "type": "temporal", "timeUnit": "year", "title": "Year Constructed"}
 
         ],
