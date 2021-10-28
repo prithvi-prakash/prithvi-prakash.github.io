@@ -4,13 +4,13 @@ var myScheme = {
     "data": {"url": "https://raw.githubusercontent.com/prithvi-prakash/prithvi-prakash.github.io/master/building_inventory.csv"},
     "mark": {
         "type": "circle",
-        "opacity": 0.45
+        "opacity": 0.6
         
     },
     
     "height": 400,
     "width": 600,
-    
+    "background": "#DFCFBE",
     "transform": [
     {
       "window": [{
@@ -50,6 +50,3 @@ var myScheme = {
 
 
 vegaEmbed("#vis", myScheme)
-// result.view provides access to the Vega View API
-.then(result => console.log(result))
-.catch(console.warn);
