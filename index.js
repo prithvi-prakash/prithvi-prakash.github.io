@@ -19,13 +19,13 @@ var myScheme = {
       }],
       "sort": [{ "field": "Square Footage", "order": "descending" }]
     }, {
-      "filter": "datum.rank <= 150"
+      "filter": "datum.rank <= 100"
     }
   ],
     "encoding": {
         "y": {"field": "Agency Name", "sort": "descending"},
         
-        "x": {"field": "Year Constructed", "type": "temporal", "scale": {"domain": ["01-01-1900", "01-01-2020"]}},
+        "x": {"field": "Year Constructed", "type": "temporal", "scale": {"domain": ["01-01-1860", "01-01-2020"]}},
         "tooltip": [
           {"field": "Location Name", "type": "nominal", "title": "Location"},
           {"field": "Square Footage", "type": "quantitative", "title": "Building Area"},
